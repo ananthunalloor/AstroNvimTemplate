@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -10,8 +8,72 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        "lua_ls",
-        -- add more arguments for adding more language servers
+        -- ========================
+        -- Core Languages & Runtimes
+        -- ========================
+        "clangd",        -- C/C++
+        "denols",        -- Deno/TypeScript runtime
+        "gopls",         -- Go
+        "lua_ls",        -- Lua
+        "ols",           -- Odin
+        "rust_analyzer", -- Rust
+        "zls",           -- Zig
+
+        -- JavaScript/TypeScript
+        "ts_ls", -- TypeScript
+
+        -- ====================
+        -- Scripting & Automation
+        -- ====================
+        "bashls",               -- Bash
+        "jedi_language_server", -- Python
+        "pylsp",                -- Python
+        "pyright",              -- Python
+
+        -- ================
+        -- Embedded & IoT
+        -- ================
+        "arduino_language_server", -- Arduino
+
+        -- ================
+        -- Web Development
+        -- ================
+        -- Frameworks
+        "astro",  -- Astro
+        "htmx",   -- HTMX
+        "svelte", -- Svelte
+        "vuels",  -- Vue
+
+        -- HTML/CSS
+        "cssls",         -- CSS
+        "css_variables", -- CSS Variables
+        "html",          -- HTML
+        "tailwindcss",   -- Tailwind CSS
+
+        -- ============
+        -- Databases
+        -- ============
+        "sqlls", -- SQL
+
+        -- ====================
+        -- Documentation & Text
+        -- ====================
+        "ltex",     -- LaTeX/Markdown (grammar/spellcheck)
+        "marksman", -- Markdown
+        "textlsp",  -- Generic text
+
+        -- ============
+        -- DevOps
+        -- ============
+        "dockerls", -- Docker
+
+        -- ================
+        -- Data Formats
+        -- ================
+        "jsonls",  -- JSON
+        "yamlls",  -- YAML
+        "graphql", -- GraphQL
+        "buf_ls",  -- Protocol Buffers
       },
     },
   },
