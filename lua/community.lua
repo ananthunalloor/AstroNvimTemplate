@@ -10,6 +10,6 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.utility.hover-nvim" },
-  { import = "astrocommunity.scolling.mini-animate" },
+  { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.recipes.vscode-icons" },
 }
